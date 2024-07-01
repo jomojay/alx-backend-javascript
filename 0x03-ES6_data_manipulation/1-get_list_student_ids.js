@@ -8,9 +8,11 @@
  * @author Bezaleel Olakunori <https://github.com/B3zaleel>
  * @returns
  */
-export default function getListStudentIds(students) {
-  if (students instanceof Array) {
-    return students.map((student) => student.id);
+export default function getListStudentIds(arr) {
+  let newArr = [];
+  if (arr instanceof Array) {
+    newArr = arr.map((item) => item.id);
   }
-  return [];
+
+  return newArr;
 }
